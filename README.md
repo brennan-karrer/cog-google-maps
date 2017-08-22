@@ -1,6 +1,6 @@
-# Ember CLI G-Maps [![Ember Badge](https://embadge.io/b/8.svg)](https://embadge.io/badges/8) [![Build Status](https://travis-ci.org/Matt-Jensen/cog-google-maps.svg)](https://travis-ci.org/Matt-Jensen/cog-google-maps.svg?branch=master) [![Ember Observer Score](http://emberobserver.com/badges/cog-google-maps.svg)](http://emberobserver.com/addons/cog-google-maps)
+# Ember CLI cog-google-maps [![Ember Badge](https://embadge.io/b/8.svg)](https://embadge.io/badges/8) [![Build Status](https://travis-ci.org/Matt-Jensen/cog-google-maps.svg)](https://travis-ci.org/Matt-Jensen/cog-google-maps.svg?branch=master) [![Ember Observer Score](http://emberobserver.com/badges/cog-google-maps.svg)](http://emberobserver.com/addons/cog-google-maps)
 
-> Ember CLI G-Maps is a Google Map component for map driven applications.
+> Ember CLI cog-google-maps is a Google Map component for map driven applications.
 
 A map driven application responds to map interactions with fresh data. What this means for the developer is that you will need consistent access to the state of the map as well as intuitive ways to efficiently render large amounts of data.
 
@@ -22,7 +22,7 @@ In terminal:
 ```bash
 ember install cog-google-maps
 ```
-This will install the `cog-google-maps` node module and the `gmaps` bower component.  The g-maps component will be available to your application, however you need to update your environment configuration to avoid violating the content security policy.
+This will install the `cog-google-maps` node module and the `gmaps` bower component.  The cog-google-maps component will be available to your application, however you need to update your environment configuration to avoid violating the content security policy.
 
 Update your `config/environment.js` Content Security Policy to contain:
 
@@ -122,7 +122,7 @@ export default Ember.Controller.extend({
 
 In your template:
 ```handlebars
-{{g-maps name="my-map" lat=lat lng=lng zoom=zoom}}
+{{cog-google-maps name="my-map" lat=lat lng=lng zoom=zoom}}
 ```
 
 **Adding Markers**
@@ -160,7 +160,7 @@ export default Ember.Controller.extend({
 ```
 
 ```handlebars
-{{g-maps ... markers=markers}}
+{{cog-google-maps ... markers=markers}}
 ```
 
 **Adding Polygons**
@@ -203,7 +203,7 @@ export default Ember.Route.extend({
 ```
 
 ```handlebars
-{{g-maps ... polygons=polygons}}
+{{cog-google-maps ... polygons=polygons}}
 ```
 
 **Adding Polylines**
@@ -247,7 +247,7 @@ export default Ember.Route.extend({
 ```
 
 ```handlebars
-{{g-maps ... polylines=polylines}}
+{{cog-google-maps ... polylines=polylines}}
 ```
 
 **Adding Circles**
@@ -286,7 +286,7 @@ export default Ember.Route.extend({
 ```
 
 ```handlebars
-{{g-maps ... circles=circles}}
+{{cog-google-maps ... circles=circles}}
 ```
 
 **Adding Rectangles**
@@ -330,7 +330,7 @@ export default Ember.Route.extend({
 ```
 
 ```handlebars
-{{g-maps ... rectangles=rectangles}}
+{{cog-google-maps ... rectangles=rectangles}}
 ```
 
 **Adding Overlays**
@@ -365,7 +365,7 @@ export default Ember.Route.extend({
 ```
 
 ```handlebars
-{{g-maps ... rectangles=rectangles}}
+{{cog-google-maps ... rectangles=rectangles}}
 ```
 
 **Basic G-Map Component Event**
@@ -397,7 +397,7 @@ export default Ember.Route.extend({
 ```
 
 ```handlebars
-{{g-maps ... click="onMapClick"}}
+{{cog-google-maps ... click="onMapClick"}}
 ```
 
 **Setting Map Properties**
@@ -422,39 +422,39 @@ export default Ember.Controller.extend({
 ```
 
 ```handlebars
-{{g-maps ... mapType=myMapType}}
+{{cog-google-maps ... mapType=myMapType}}
 ```
 
 ```handlebars
-{{g-maps ... showMapTypeControl=true}}
+{{cog-google-maps ... showMapTypeControl=true}}
 ```
 
 ```handlebars
-{{g-maps ... draggable=true}}
+{{cog-google-maps ... draggable=true}}
 ```
 
 ```handlebars
-{{g-maps ... disableDefaultUI=true}}
+{{cog-google-maps ... disableDefaultUI=true}}
 ```
 
 ```handlebars
-{{g-maps ... clickableIcons=true}}
+{{cog-google-maps ... clickableIcons=true}}
 ```
 
 ```handlebars
-{{g-maps ... disableDoubleClickZoom=true}}
+{{cog-google-maps ... disableDoubleClickZoom=true}}
 ```
 
 ```handlebars
-{{g-maps ... scrollwheel=true}}
+{{cog-google-maps ... scrollwheel=true}}
 ```
 
 ```handlebars
-{{g-maps ... showZoomControl=true}}
+{{cog-google-maps ... showZoomControl=true}}
 ```
 
 ```handlebars
-{{g-maps ... showScaleControl=true}}
+{{cog-google-maps ... showScaleControl=true}}
 ```
 
 **React to Map Loading Completion**
@@ -470,10 +470,10 @@ export default Ember.Route.extend({
 ```
 
 ```handlebars
-{{g-maps name="my-map" loaded="onMapLoad"}}
+{{cog-google-maps name="my-map" loaded="onMapLoad"}}
 ```
 
-## Supported G-Maps Events ##
+## Supported cog-google-maps Events ##
 
 [Full component events documentation](http://matt-jensen.github.io/cog-google-maps/#/basic-usage/map-events)
 
@@ -567,7 +567,7 @@ In `config/environment.js`
 ```js
 ENV.googleMap = {
   // your configuration goes in here
-  libraries: ['places', 'geometry'], // milage varies based on g-maps supported features
+  libraries: ['places', 'geometry'], // milage varies based on cog-google-maps supported features
   version: '3', // not recommended
   apiKey: 'your-unique-google-map-api-key',
   lazyLoad: false, // default
@@ -602,7 +602,7 @@ Changelog
 * Adds scale control support
 * Adds work client api-key support
 * Unit test refactor
-* Restructures g-maps core functionality
+* Restructures cog-google-maps core functionality
 
 0.3.2
 ------------
@@ -649,7 +649,7 @@ Changelog
 ------------
 * Added Rectangle Maps Child
 * Map selections
-* fixed g-maps bindings on center_changed
+* fixed cog-google-maps bindings on center_changed
 
 0.0.14-beta
 ------------

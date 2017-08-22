@@ -1,5 +1,5 @@
 import Ember              from 'ember';
-import GMapsPolygonsMixin from 'cog-google-maps/mixins/g-maps/polygons';
+import GMapsPolygonsMixin from 'cog-google-maps/mixins/cog-google-maps/polygons';
 import { module, test }   from 'qunit';
 import sinon              from 'sinon';
 
@@ -24,7 +24,7 @@ test('it should throw an error when `polygons` property is not an Ember array', 
 
   assert.throws(
     function() { return subject._gmapPolygonValidate(); },
-    new Error('g-maps component expects polygons to be an Ember Array')
+    new Error('cog-google-maps component expects polygons to be an Ember Array')
   );
 });
 
@@ -33,7 +33,7 @@ test('it should throw an error when `polygons.[].0.paths` property is not an arr
 
   assert.throws(
     function() { return subject._gmapPolygonValidate(); },
-    new Error('g-maps polygon paths expects Array of Arrays: [[lat, lng]]')
+    new Error('cog-google-maps polygon paths expects Array of Arrays: [[lat, lng]]')
   );
 });
 

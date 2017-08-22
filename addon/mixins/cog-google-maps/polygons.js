@@ -1,5 +1,5 @@
 import Ember           from 'ember';
-import childCollection from 'cog-google-maps/utils/g-maps/child-collection';
+import childCollection from 'cog-google-maps/utils/cog-google-maps/child-collection';
 
 const { isArray } = Ember;
 
@@ -21,7 +21,7 @@ export default Ember.Mixin.create(
       if(!polygons) { return; } // validation not necessary
 
       if(!isArray(polygons)) {
-        throw new Error('g-maps component expects polygons to be an Ember Array');
+        throw new Error('cog-google-maps component expects polygons to be an Ember Array');
       }
 
       // End validation
@@ -29,7 +29,7 @@ export default Ember.Mixin.create(
 
       // Reminder for well formed polygon paths
       if(!isArray(polygons[0].paths[0])) {
-        throw new Error('g-maps polygon paths expects Array of Arrays: [[lat, lng]]');
+        throw new Error('cog-google-maps polygon paths expects Array of Arrays: [[lat, lng]]');
       }
     }
   })

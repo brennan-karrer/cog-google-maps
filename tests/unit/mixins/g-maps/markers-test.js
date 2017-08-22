@@ -1,5 +1,5 @@
 import Ember             from 'ember';
-import GMapsMarkersMixin from 'cog-google-maps/mixins/g-maps/markers';
+import GMapsMarkersMixin from 'cog-google-maps/mixins/cog-google-maps/markers';
 import { module, test }  from 'qunit';
 import sinon             from 'sinon';
 
@@ -23,7 +23,7 @@ test('it should throw an error when `markers` property is not an Ember array', f
 
   assert.throws(
     function() { return subject._gmapMarkerValidate(); },
-    new Error('g-maps component expects markers to be an Ember Array')
+    new Error('cog-google-maps component expects markers to be an Ember Array')
   );
 });
 

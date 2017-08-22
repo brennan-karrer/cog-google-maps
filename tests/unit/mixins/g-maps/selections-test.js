@@ -1,5 +1,5 @@
 import Ember                from 'ember';
-import GMapsSelectionsMixin from 'cog-google-maps/mixins/g-maps/selections';
+import GMapsSelectionsMixin from 'cog-google-maps/mixins/cog-google-maps/selections';
 import { module, test }     from 'qunit';
 import sinon                from 'sinon';
 

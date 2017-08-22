@@ -12,7 +12,7 @@ export default function(app, selector = EMBER_CLI_GMAPS_SELECTOR) {
     .then(() => {
       Ember.run.scheduleOnce('afterRender', () => {
         const $map = $(selector);
-        assert(`No g-maps component found at selector: ${selector}`, !$map.length || !$map.eq(0).hasClass(EMBER_CLI_GMAPS_SELECTOR));
+        assert(`No cog-google-maps component found at selector: ${selector}`, !$map.length || !$map.eq(0).hasClass(EMBER_CLI_GMAPS_SELECTOR));
 
         google.maps.event.addListenerOnce($map.get(0).__GOOGLE_MAP__, 'tilesloaded', () => {
           Ember.run(resolve);

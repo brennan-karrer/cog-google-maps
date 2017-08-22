@@ -1,5 +1,5 @@
 import Ember                from 'ember';
-import GMapsRectanglesMixin from 'cog-google-maps/mixins/g-maps/rectangles';
+import GMapsRectanglesMixin from 'cog-google-maps/mixins/cog-google-maps/rectangles';
 import { module, test }     from 'qunit';
 import sinon                from 'sinon';
 
@@ -23,7 +23,7 @@ test('it should throw an error when `rectangles` property is not an Ember array'
 
   assert.throws(
     function() { return subject._gmapRectangleValidate(); },
-    new Error('g-maps component expects rectangles to be an Ember Array')
+    new Error('cog-google-maps component expects rectangles to be an Ember Array')
   );
 });
 
@@ -32,7 +32,7 @@ test('it should throw an error when `rectangles.[].0.bounds` property is not an 
 
   assert.throws(
     function() { return subject._gmapRectangleValidate(); },
-    new Error('g-maps rectangle bounds property expects Array of Arrays: [[lat, lng]]')
+    new Error('cog-google-maps rectangle bounds property expects Array of Arrays: [[lat, lng]]')
   );
 });
 

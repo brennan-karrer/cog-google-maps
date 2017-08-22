@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import childCollection from 'cog-google-maps/utils/g-maps/child-collection';
+import childCollection from 'cog-google-maps/utils/cog-google-maps/child-collection';
 
 const { isArray } = Ember;
 
@@ -18,7 +18,7 @@ export default Ember.Mixin.create(
     validate: function validateCircles() {
       const circles = this.get('circles');
       if(circles && !isArray(circles)) {
-        throw new Error('g-maps component expects circles to be an Ember Array');
+        throw new Error('cog-google-maps component expects circles to be an Ember Array');
       }
     }
   })

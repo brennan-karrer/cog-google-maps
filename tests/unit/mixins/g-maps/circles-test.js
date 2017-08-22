@@ -1,5 +1,5 @@
 import Ember             from 'ember';
-import GMapsCirclesMixin from 'cog-google-maps/mixins/g-maps/circles';
+import GMapsCirclesMixin from 'cog-google-maps/mixins/cog-google-maps/circles';
 import { module, test }  from 'qunit';
 import sinon             from 'sinon';
 
@@ -25,7 +25,7 @@ test('it should throw an error when `circles` property is not an Ember array', f
 
   assert.throws(
     function() { return subject._gmapCircleValidate(); },
-    new Error('g-maps component expects circles to be an Ember Array')
+    new Error('cog-google-maps component expects circles to be an Ember Array')
   );
 });
 

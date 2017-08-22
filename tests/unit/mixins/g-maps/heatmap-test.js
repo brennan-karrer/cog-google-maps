@@ -1,5 +1,5 @@
 import Ember             from 'ember';
-import GMapsHeatmapMixin from 'cog-google-maps/mixins/g-maps/heatmap';
+import GMapsHeatmapMixin from 'cog-google-maps/mixins/cog-google-maps/heatmap';
 import { module, test }  from 'qunit';
 import sinon             from 'sinon';
 

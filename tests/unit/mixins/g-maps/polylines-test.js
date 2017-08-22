@@ -1,5 +1,5 @@
 import Ember               from 'ember';
-import GMapsPolylinesMixin from 'cog-google-maps/mixins/g-maps/polylines';
+import GMapsPolylinesMixin from 'cog-google-maps/mixins/cog-google-maps/polylines';
 import { module, test }    from 'qunit';
 import sinon               from 'sinon';
 
@@ -23,7 +23,7 @@ test('it should throw an error when `polylines` property is not an Ember array',
 
   assert.throws(
     function() { return subject._gmapPolylineValidate(); },
-    new Error('g-maps component expects polylines to be an Ember Array')
+    new Error('cog-google-maps component expects polylines to be an Ember Array')
   );
 });
 
@@ -32,7 +32,7 @@ test('it should throw an error when `polylines.[].0.path` property is not an arr
 
   assert.throws(
     function() { return subject._gmapPolylineValidate(); },
-    new Error('g-maps polyline path property expects Array of Arrays: [[lat, lng]]')
+    new Error('cog-google-maps polyline path property expects Array of Arrays: [[lat, lng]]')
   );
 });
 

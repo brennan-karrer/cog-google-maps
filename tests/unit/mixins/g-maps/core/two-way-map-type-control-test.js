@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import twoWayMapTypeControlMixin from 'cog-google-maps/mixins/g-maps/core/two-way-map-type-control';
+import twoWayMapTypeControlMixin from 'cog-google-maps/mixins/cog-google-maps/core/two-way-map-type-control';
 import { module, test } from 'qunit';
 
 module('Unit | Mixin | g maps/core/two way map type control');

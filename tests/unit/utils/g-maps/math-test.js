@@ -1,4 +1,4 @@
-import { areCoordsEqual } from 'cog-google-maps/utils/g-maps/math';
+import { areCoordsEqual } from 'cog-google-maps/utils/cog-google-maps/math';
 import { module, test } from 'qunit';
 
 module('Unit | Utility | g maps/math');

@@ -1,5 +1,5 @@
 // import Ember from 'ember';
-// import GMapsCoreMixin from 'cog-google-maps/mixins/g-maps/core';
+// import GMapsCoreMixin from 'cog-google-maps/mixins/cog-google-maps/core';
 // import { module, test } from 'qunit';
 // import sinon from 'sinon';
 //

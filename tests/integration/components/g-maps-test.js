@@ -3,7 +3,7 @@ import Ember                        from 'ember';
 import { moduleForComponent, test } from 'ember-qunit';
 // import waitForPromise               from '../../helpers/wait-for-promise';
 
-moduleForComponent('g-maps', 'Integration | Component | g maps', {
+moduleForComponent('cog-google-maps', 'Integration | Component | g maps', {
   integration: true,
   beforeEach() {
     this.inject.service('g-map', { as: 'gMapService' });
@@ -19,7 +19,7 @@ test('it renders', function(assert) {
     gMap: Ember.inject.service()
   });
 
-  this.render(hbs`{{g-maps name=name lat=lat lng=lng zoom=zoom}}`);
+  this.render(hbs`{{cog-google-maps name=name lat=lat lng=lng zoom=zoom}}`);
 
   /* Need map to render
   Ember.run(() => {
@@ -44,7 +44,7 @@ test('it should add a map instance to the g-map service', function(assert) {
     gMap: Ember.inject.service()
   });
 
-  this.render(hbs`{{g-maps name=name lat=lat lng=lng zoom=zoom}}`);
+  this.render(hbs`{{cog-google-maps name=name lat=lat lng=lng zoom=zoom}}`);
 
   assert.equal(
     this.get('gMapService').maps.select('name').name,
@@ -60,7 +60,7 @@ test('it should sync on `isMapLoaded` and updates to bound `markers.[]`', functi
   });
 
   // *Warning* causes console warning: "was modified inside the didInsertElement hook"
-  this.render(hbs`{{g-maps markers=markers isMapLoaded=true map=(mut map)}}`);
+  this.render(hbs`{{cog-google-maps markers=markers isMapLoaded=true map=(mut map)}}`);
 
   assert.equal(this.get('map.markers.length'), '0', 'should have `0` markers length');
 
@@ -76,7 +76,7 @@ test('it should sync on `isMapLoaded` and updates to bound `circles.[]`', functi
   });
 
   // *Warning* causes console warning: "was modified inside the didInsertElement hook"
-  this.render(hbs`{{g-maps circles=circles isMapLoaded=true map=(mut map)}}`);
+  this.render(hbs`{{cog-google-maps circles=circles isMapLoaded=true map=(mut map)}}`);
 
   assert.equal(this.get('map.circles.length'), '0', 'should have `0` circles length');
 
@@ -92,7 +92,7 @@ test('it should sync on `isMapLoaded` and updates to bound `polygons.[]`', funct
   });
 
   // *Warning* causes console warning: "was modified inside the didInsertElement hook"
-  this.render(hbs`{{g-maps polygons=polygons isMapLoaded=true map=(mut map)}}`);
+  this.render(hbs`{{cog-google-maps polygons=polygons isMapLoaded=true map=(mut map)}}`);
 
   assert.equal(this.get('map.polygons.length'), '0', 'should have `0` polygons length');
 
@@ -108,7 +108,7 @@ test('it should sync on `isMapLoaded` and updates to bound `polylines.[]`', func
   });
 
   // *Warning* causes console warning: "was modified inside the didInsertElement hook"
-  this.render(hbs`{{g-maps polylines=polylines isMapLoaded=true map=(mut map)}}`);
+  this.render(hbs`{{cog-google-maps polylines=polylines isMapLoaded=true map=(mut map)}}`);
 
   assert.equal(this.get('map.polylines.length'), '0', 'should have `0` polylines length');
 
@@ -124,7 +124,7 @@ test('it should sync on `isMapLoaded` and updates to bound `rectangles.[]`', fun
   });
 
   // *Warning* causes console warning: "was modified inside the didInsertElement hook"
-  this.render(hbs`{{g-maps rectangles=rectangles isMapLoaded=true map=(mut map)}}`);
+  this.render(hbs`{{cog-google-maps rectangles=rectangles isMapLoaded=true map=(mut map)}}`);
 
   assert.equal(this.get('map.rectangles.length'), '0', 'should have `0` rectangles length');
 
@@ -140,7 +140,7 @@ test('it should sync on `isMapLoaded` and updates to bound `rectangles.[]`', fun
 //   });
 //
 //   // *Warning* causes console warning: "was modified inside the didInsertElement hook"
-//   this.render(hbs`{{g-maps overlays=overlays isMapLoaded=true map=(mut map)}}`);
+//   this.render(hbs`{{cog-google-maps overlays=overlays isMapLoaded=true map=(mut map)}}`);
 //
 //   assert.equal(this.get('map.overlays.length'), '0', 'should have `0` overlays length');
 //

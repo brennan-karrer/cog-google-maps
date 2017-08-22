@@ -1,0 +1,1 @@
+export { default } from 'cog-google-maps/components/cog-google-maps';

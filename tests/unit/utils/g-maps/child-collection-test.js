@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import childCollection from 'cog-google-maps/utils/g-maps/child-collection';
+import childCollection from 'cog-google-maps/utils/cog-google-maps/child-collection';
 import { module, test } from 'qunit';
 
 module('Unit | Utility | g maps/child collection');

@@ -1,5 +1,5 @@
 import Ember              from 'ember';
-import GMapsOverlaysMixin from 'cog-google-maps/mixins/g-maps/overlays';
+import GMapsOverlaysMixin from 'cog-google-maps/mixins/cog-google-maps/overlays';
 import { module, test }   from 'qunit';
 import sinon              from 'sinon';
 
@@ -24,7 +24,7 @@ test('it should throw an error when `overlays` property is not an Ember array', 
 
   assert.throws(
     function() { return subject._gmapOverlayValidate(); },
-    new Error('g-maps component expects overlays to be an Ember Array')
+    new Error('cog-google-maps component expects overlays to be an Ember Array')
   );
 });
 
@@ -33,7 +33,7 @@ test('it should throw an error when `overlays.[].0` property is not an object', 
 
   assert.throws(
     function() { return subject._gmapOverlayValidate(); },
-    new Error('g-maps overlay items must be objects')
+    new Error('cog-google-maps overlay items must be objects')
   );
 });
 

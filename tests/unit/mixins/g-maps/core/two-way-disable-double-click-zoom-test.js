@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import twoWayDisableDoubleClickZoomMixin from 'cog-google-maps/mixins/g-maps/core/two-way-disable-double-click-zoom';
+import twoWayDisableDoubleClickZoomMixin from 'cog-google-maps/mixins/cog-google-maps/core/two-way-disable-double-click-zoom';
 import { module, test } from 'qunit';
 
 module('Unit | Mixin | g maps/core/two way disable double click zoom');

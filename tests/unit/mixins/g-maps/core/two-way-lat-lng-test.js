@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import twoWayLatLngMixin from 'cog-google-maps/mixins/g-maps/core/two-way-lat-lng';
+import twoWayLatLngMixin from 'cog-google-maps/mixins/cog-google-maps/core/two-way-lat-lng';
 import sinon from 'sinon';
 import { module, test } from 'qunit';
 

@@ -1,5 +1,5 @@
 import Ember           from 'ember';
-import childCollection from 'cog-google-maps/utils/g-maps/child-collection';
+import childCollection from 'cog-google-maps/utils/cog-google-maps/child-collection';
 
 const { isArray } = Ember;
 
@@ -21,7 +21,7 @@ export default Ember.Mixin.create(
       if(!overlays) { return; } // validation not necessary
 
       if(!isArray(overlays)) {
-        throw new Error('g-maps component expects overlays to be an Ember Array');
+        throw new Error('cog-google-maps component expects overlays to be an Ember Array');
       }
 
       // End validation
@@ -29,7 +29,7 @@ export default Ember.Mixin.create(
 
       // Reminder for well formed polygon paths
       if(typeof overlays[0] !== 'object' || isArray(overlays[0])) {
-        throw new Error('g-maps overlay items must be objects');
+        throw new Error('cog-google-maps overlay items must be objects');
       }
     }
   })
