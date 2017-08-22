@@ -1,5 +1,6 @@
 import Ember from 'ember';
 import loadGoogleMaps from 'cog-google-maps/utils/load-google-maps';
+import defaultStyles from 'cog-google-maps/themes/default';
 
 const { merge, uuid, computed } = Ember;
 const { bind } = Ember.run;
@@ -9,8 +10,9 @@ export default Ember.Mixin.create(Ember.Evented, {
   name: null,
   lat: 25.304567,
   lng: 51.1839,
-  zoom: 10,
+  zoom: 8,
   mapType: 'ROADMAP',
+  styles: defaultStyles.styles,
   showMapTypeControl: false,
   clickableIcons: false,
   draggable: false,

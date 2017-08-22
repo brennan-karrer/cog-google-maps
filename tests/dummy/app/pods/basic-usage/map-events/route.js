@@ -3,10 +3,6 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   setupController(controller) {
     controller.setProperties({
-      lat: 32.75494243654723,
-      lng: -86.8359375,
-      zoom: 5,
-
       isclick: false,
       isbounds_changed: false,
       iscenter_changed: false,
