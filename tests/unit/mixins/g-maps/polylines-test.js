@@ -1,5 +1,5 @@
 import Ember               from 'ember';
-import GMapsPolylinesMixin from 'ember-cli-g-maps/mixins/g-maps/polylines';
+import GMapsPolylinesMixin from 'cog-google-maps/mixins/g-maps/polylines';
 import { module, test }    from 'qunit';
 import sinon               from 'sinon';
 

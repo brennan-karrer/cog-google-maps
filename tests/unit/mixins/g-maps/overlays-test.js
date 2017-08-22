@@ -1,5 +1,5 @@
 import Ember              from 'ember';
-import GMapsOverlaysMixin from 'ember-cli-g-maps/mixins/g-maps/overlays';
+import GMapsOverlaysMixin from 'cog-google-maps/mixins/g-maps/overlays';
 import { module, test }   from 'qunit';
 import sinon              from 'sinon';
 

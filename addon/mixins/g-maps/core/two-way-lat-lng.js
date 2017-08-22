@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import { areCoordsEqual } from 'ember-cli-g-maps/utils/g-maps/math';
+import { areCoordsEqual } from 'cog-google-maps/utils/g-maps/math';
 
 const { observer, on } = Ember;
 

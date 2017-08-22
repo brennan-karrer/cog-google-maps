@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import loadGoogleMaps from 'ember-cli-g-maps/utils/load-google-maps';
+import loadGoogleMaps from 'cog-google-maps/utils/load-google-maps';
 
 const { later } = Ember.run;
 const { on, computed, isArray } = Ember;

@@ -7,7 +7,7 @@ const { RSVP } = Ember;
  * @param {String} query [location of HTML element]
  * @return {String|Boolean}
  */
-const getLazyLoadSrc = (query = 'meta[name="ember-cli-g-maps-url"]') => {
+const getLazyLoadSrc = (query = 'meta[name="cog-google-maps-url"]') => {
   let meta;
 
   if (typeof query === 'object') {

@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import twoWayZoomMixin from 'ember-cli-g-maps/mixins/g-maps/core/two-way-zoom';
+import twoWayZoomMixin from 'cog-google-maps/mixins/g-maps/core/two-way-zoom';
 import { module, test } from 'qunit';
 import sinon from 'sinon';
 

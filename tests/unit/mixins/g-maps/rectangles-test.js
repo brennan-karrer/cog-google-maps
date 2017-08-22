@@ -1,5 +1,5 @@
 import Ember                from 'ember';
-import GMapsRectanglesMixin from 'ember-cli-g-maps/mixins/g-maps/rectangles';
+import GMapsRectanglesMixin from 'cog-google-maps/mixins/g-maps/rectangles';
 import { module, test }     from 'qunit';
 import sinon                from 'sinon';
 

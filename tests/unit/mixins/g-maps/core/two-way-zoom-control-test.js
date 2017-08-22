@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import twoWayZoomControlMixin from 'ember-cli-g-maps/mixins/g-maps/core/two-way-zoom-control';
+import twoWayZoomControlMixin from 'cog-google-maps/mixins/g-maps/core/two-way-zoom-control';
 import { module, test } from 'qunit';
 
 module('Unit | Mixin | g maps/core/two way zoom control');

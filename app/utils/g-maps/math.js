@@ -1,1 +1,1 @@
-export { default } from 'ember-cli-g-maps/utils/g-maps/math';
+export { default } from 'cog-google-maps/utils/g-maps/math';

@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import loadGoogleMaps from 'ember-cli-g-maps/utils/load-google-maps';
+import loadGoogleMaps from 'cog-google-maps/utils/load-google-maps';
 import TextField from 'ember-components/text-field';
 import { assert } from 'ember-metal/utils';
 

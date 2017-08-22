@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import loadGoogleMaps from 'ember-cli-g-maps/utils/load-google-maps';
+import loadGoogleMaps from 'cog-google-maps/utils/load-google-maps';
 
 const { merge, uuid, computed } = Ember;
 const { bind } = Ember.run;
@@ -7,18 +7,18 @@ const { bind } = Ember.run;
 export default Ember.Mixin.create(Ember.Evented, {
   map: null,
   name: null,
-  lat: 33.5205556,
-  lng: -86.8025,
-  zoom: 0,
+  lat: 25.304567,
+  lng: 51.1839,
+  zoom: 10,
   mapType: 'ROADMAP',
-  showMapTypeControl: true,
-  clickableIcons: true,
-  draggable: true,
-  disableDefaultUI: false,
-  disableDoubleClickZoom: false,
-  scrollwheel: true,
-  showZoomControl: true,
-  showScaleControl: true,
+  showMapTypeControl: false,
+  clickableIcons: false,
+  draggable: false,
+  disableDefaultUI: true,
+  disableDoubleClickZoom: true,
+  scrollwheel: false,
+  showZoomControl: false,
+  showScaleControl: false,
   isMapLoaded: false,
   classNames: ['ember-cli-g-map'],
   gMap: Ember.inject.service(),
@@ -99,7 +99,7 @@ export default Ember.Mixin.create(Ember.Evented, {
         google.maps.event.addListenerOnce(map.map, 'idle', Ember.run.bind(this, this._onMapLoad));
       })
       .catch(() => {
-        Ember.Logger.error('Failed to load google maps via Ember-cli-g-maps');
+        Ember.Logger.error('Failed to load google maps via cog-google-maps');
       });
   },
 

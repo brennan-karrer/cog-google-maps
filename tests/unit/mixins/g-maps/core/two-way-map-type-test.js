@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import twoWayMapTypeMixin from 'ember-cli-g-maps/mixins/g-maps/core/two-way-map-type';
+import twoWayMapTypeMixin from 'cog-google-maps/mixins/g-maps/core/two-way-map-type';
 import { module, test } from 'qunit';
 
 module('Unit | Mixin | g maps/core/two way map type');

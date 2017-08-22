@@ -5,7 +5,7 @@ const path = require('path');
 const fastbootTransform = require('fastboot-transform');
 
 module.exports = {
-  name: 'ember-cli-g-maps',
+  name: 'cog-google-maps',
 
   options: {
     nodeAssets: {
@@ -87,7 +87,7 @@ module.exports = {
       googleMapSrc += '?'+ params.join('&');
 
       if(googleMapConfig.lazyLoad) {
-        content = '<meta name="ember-cli-g-maps-url" content="'+ googleMapSrc +'">';
+        content = '<meta name="cog-google-maps-url" content="'+ googleMapSrc +'">';
       } else {
         content = '<script src="'+ googleMapSrc +'"></script>';
       }

@@ -1,17 +1,17 @@
-# Ember CLI G-Maps [![Ember Badge](https://embadge.io/b/8.svg)](https://embadge.io/badges/8) [![Build Status](https://travis-ci.org/Matt-Jensen/ember-cli-g-maps.svg)](https://travis-ci.org/Matt-Jensen/ember-cli-g-maps.svg?branch=master) [![Ember Observer Score](http://emberobserver.com/badges/ember-cli-g-maps.svg)](http://emberobserver.com/addons/ember-cli-g-maps)
+# Ember CLI G-Maps [![Ember Badge](https://embadge.io/b/8.svg)](https://embadge.io/badges/8) [![Build Status](https://travis-ci.org/Matt-Jensen/cog-google-maps.svg)](https://travis-ci.org/Matt-Jensen/cog-google-maps.svg?branch=master) [![Ember Observer Score](http://emberobserver.com/badges/cog-google-maps.svg)](http://emberobserver.com/addons/cog-google-maps)
 
 > Ember CLI G-Maps is a Google Map component for map driven applications.
 
 A map driven application responds to map interactions with fresh data. What this means for the developer is that you will need consistent access to the state of the map as well as intuitive ways to efficiently render large amounts of data.
 
-Ember-cli-g-maps seeks to give you the information you need, when you need it, so that you can make the necessary requests and render the most relevant map data for your users.
+cog-google-maps seeks to give you the information you need, when you need it, so that you can make the necessary requests and render the most relevant map data for your users.
 
 Built with the [GMaps-For-Apps.js library](https://github.com/Matt-Jensen/gmaps-for-apps), a fork of GMaps.
 
 Installation
 ------------
 
-[Full installation & configuration documentation.](http://matt-jensen.github.io/ember-cli-g-maps/#/basic-usage/index)
+[Full installation & configuration documentation.](http://matt-jensen.github.io/cog-google-maps/#/basic-usage/index)
 
 Supports:
 - Ember >=1.13
@@ -20,9 +20,9 @@ Supports:
 In terminal:
 
 ```bash
-ember install ember-cli-g-maps
+ember install cog-google-maps
 ```
-This will install the `ember-cli-g-maps` node module and the `gmaps` bower component.  The g-maps component will be available to your application, however you need to update your environment configuration to avoid violating the content security policy.
+This will install the `cog-google-maps` node module and the `gmaps` bower component.  The g-maps component will be available to your application, however you need to update your environment configuration to avoid violating the content security policy.
 
 Update your `config/environment.js` Content Security Policy to contain:
 
@@ -50,46 +50,46 @@ Documentation
 
 **Install and Configuration**
 
-- [Installation and Configuration](http://matt-jensen.github.io/ember-cli-g-maps/#/basic-usage/index)
-- [Setting Google API Key](http://matt-jensen.github.io/ember-cli-g-maps/#/setup/apiKey)
-- [Adding Libraries](http://matt-jensen.github.io/ember-cli-g-maps/#/setup/libraries)
-- [Misc Setup Options](http://matt-jensen.github.io/ember-cli-g-maps/#/setup/misc)
+- [Installation and Configuration](http://matt-jensen.github.io/cog-google-maps/#/basic-usage/index)
+- [Setting Google API Key](http://matt-jensen.github.io/cog-google-maps/#/setup/apiKey)
+- [Adding Libraries](http://matt-jensen.github.io/cog-google-maps/#/setup/libraries)
+- [Misc Setup Options](http://matt-jensen.github.io/cog-google-maps/#/setup/misc)
 
 **Component Properties and Events**
 
-- [Basic Map Example](http://matt-jensen.github.io/ember-cli-g-maps/#/basic-usage/index)
-- [Supported Component Properties](http://matt-jensen.github.io/ember-cli-g-maps/#/basic-usage/map-properties)
-- [Supported Component Events](http://matt-jensen.github.io/ember-cli-g-maps/#/basic-usage/map-events)
+- [Basic Map Example](http://matt-jensen.github.io/cog-google-maps/#/basic-usage/index)
+- [Supported Component Properties](http://matt-jensen.github.io/cog-google-maps/#/basic-usage/map-properties)
+- [Supported Component Events](http://matt-jensen.github.io/cog-google-maps/#/basic-usage/map-events)
 
 **Elements**
 
-- [Marker Elements](http://matt-jensen.github.io/ember-cli-g-maps/#/basic-usage/markers)
-- [Circle Elements](http://matt-jensen.github.io/ember-cli-g-maps/#/basic-usage/circles)
-- [Polygon Elements](http://matt-jensen.github.io/ember-cli-g-maps/#/basic-usage/polygons)
-- [Polyline Elements](http://matt-jensen.github.io/ember-cli-g-maps/#/basic-usage/polylines)
-- [Rectangle Elements](http://matt-jensen.github.io/ember-cli-g-maps/#/basic-usage/rectangles)
-- [Overlay Elements](http://matt-jensen.github.io/ember-cli-g-maps/#/basic-usage/overlays)
+- [Marker Elements](http://matt-jensen.github.io/cog-google-maps/#/basic-usage/markers)
+- [Circle Elements](http://matt-jensen.github.io/cog-google-maps/#/basic-usage/circles)
+- [Polygon Elements](http://matt-jensen.github.io/cog-google-maps/#/basic-usage/polygons)
+- [Polyline Elements](http://matt-jensen.github.io/cog-google-maps/#/basic-usage/polylines)
+- [Rectangle Elements](http://matt-jensen.github.io/cog-google-maps/#/basic-usage/rectangles)
+- [Overlay Elements](http://matt-jensen.github.io/cog-google-maps/#/basic-usage/overlays)
 
 **Services**
-- [Geocoding](http://matt-jensen.github.io/ember-cli-g-maps/#/service/geocoding)
-- [Refreshing](http://matt-jensen.github.io/ember-cli-g-maps/#/service/refresh)
+- [Geocoding](http://matt-jensen.github.io/cog-google-maps/#/service/geocoding)
+- [Refreshing](http://matt-jensen.github.io/cog-google-maps/#/service/refresh)
 
 **Selections**
 
-- [Setup](http://matt-jensen.github.io/ember-cli-g-maps/#/selections/index)
-- [Properties](http://matt-jensen.github.io/ember-cli-g-maps/#/selections/properties)
-- [Events](http://matt-jensen.github.io/ember-cli-g-maps/#/selections/events)
-- [Marker Options](http://matt-jensen.github.io/ember-cli-g-maps/#/selections/marker)
-- [Rectangle Options](http://matt-jensen.github.io/ember-cli-g-maps/#/selections/rectangle)
-- [Circle Options](http://matt-jensen.github.io/ember-cli-g-maps/#/selections/circle)
-- [Polygon Options](http://matt-jensen.github.io/ember-cli-g-maps/#/selections/polygon)
-- [Polyline Options](http://matt-jensen.github.io/ember-cli-g-maps/#/selections/polyline)
+- [Setup](http://matt-jensen.github.io/cog-google-maps/#/selections/index)
+- [Properties](http://matt-jensen.github.io/cog-google-maps/#/selections/properties)
+- [Events](http://matt-jensen.github.io/cog-google-maps/#/selections/events)
+- [Marker Options](http://matt-jensen.github.io/cog-google-maps/#/selections/marker)
+- [Rectangle Options](http://matt-jensen.github.io/cog-google-maps/#/selections/rectangle)
+- [Circle Options](http://matt-jensen.github.io/cog-google-maps/#/selections/circle)
+- [Polygon Options](http://matt-jensen.github.io/cog-google-maps/#/selections/polygon)
+- [Polyline Options](http://matt-jensen.github.io/cog-google-maps/#/selections/polyline)
 
 **Heatmap**
 
-- [Setup](http://matt-jensen.github.io/ember-cli-g-maps/#/heatmap/index)
-- [Properties](http://matt-jensen.github.io/ember-cli-g-maps/#/heatmap/properties)
-- [Marker](http://matt-jensen.github.io/ember-cli-g-maps/#/heatmap/marker)
+- [Setup](http://matt-jensen.github.io/cog-google-maps/#/heatmap/index)
+- [Properties](http://matt-jensen.github.io/cog-google-maps/#/heatmap/properties)
+- [Marker](http://matt-jensen.github.io/cog-google-maps/#/heatmap/marker)
 
 
 Currently Supports
@@ -101,7 +101,7 @@ Currently Supports
 - [Polylines](https://developers.google.com/maps/documentation/javascript/3.exp/reference#Polyline)
 - [Rectangles](http://hpneo.github.io/gmaps/documentation.html#GMaps-drawRectangle)
 - [Overlays](https://developers.google.com/maps/documentation/javascript/3.exp/reference#OverlayView)
-- [Selections](http://matt-jensen.github.io/ember-cli-g-maps/#/selections/index)
+- [Selections](http://matt-jensen.github.io/cog-google-maps/#/selections/index)
 - [Heatmap Layer](https://developers.google.com/maps/documentation/javascript/examples/layer-heatmap)
 
 Usage
@@ -109,7 +109,7 @@ Usage
 
 **Simplest Possible G-Map**
 
-[Full simple map documentation](http://matt-jensen.github.io/ember-cli-g-maps/#/basic-usage/index)
+[Full simple map documentation](http://matt-jensen.github.io/cog-google-maps/#/basic-usage/index)
 
 In your controller:
 ```js
@@ -127,7 +127,7 @@ In your template:
 
 **Adding Markers**
 
-[Full marker documentation](http://matt-jensen.github.io/ember-cli-g-maps/#/basic-usage/markers)
+[Full marker documentation](http://matt-jensen.github.io/cog-google-maps/#/basic-usage/markers)
 
 ```js
 export default Ember.Controller.extend({
@@ -165,7 +165,7 @@ export default Ember.Controller.extend({
 
 **Adding Polygons**
 
-[Full polygon documentation](http://matt-jensen.github.io/ember-cli-g-maps/#/basic-usage/polygons)
+[Full polygon documentation](http://matt-jensen.github.io/cog-google-maps/#/basic-usage/polygons)
 
 ```js
 export default Ember.Route.extend({
@@ -208,7 +208,7 @@ export default Ember.Route.extend({
 
 **Adding Polylines**
 
-[Full polyline documentation](http://matt-jensen.github.io/ember-cli-g-maps/#/basic-usage/polylines)
+[Full polyline documentation](http://matt-jensen.github.io/cog-google-maps/#/basic-usage/polylines)
 
 ```js
 export default Ember.Route.extend({
@@ -252,7 +252,7 @@ export default Ember.Route.extend({
 
 **Adding Circles**
 
-[Full circle documentation](http://matt-jensen.github.io/ember-cli-g-maps/#/basic-usage/circles)
+[Full circle documentation](http://matt-jensen.github.io/cog-google-maps/#/basic-usage/circles)
 
 ```js
 export default Ember.Route.extend({
@@ -291,7 +291,7 @@ export default Ember.Route.extend({
 
 **Adding Rectangles**
 
-[Full rectangle documentation](http://matt-jensen.github.io/ember-cli-g-maps/#/basic-usage/rectangles)
+[Full rectangle documentation](http://matt-jensen.github.io/cog-google-maps/#/basic-usage/rectangles)
 
 ```js
 export default Ember.Route.extend({
@@ -335,7 +335,7 @@ export default Ember.Route.extend({
 
 **Adding Overlays**
 
-[Full overlay documentation](http://matt-jensen.github.io/ember-cli-g-maps/#/basic-usage/overlays)
+[Full overlay documentation](http://matt-jensen.github.io/cog-google-maps/#/basic-usage/overlays)
 
 ```js
 export default Ember.Route.extend({
@@ -402,7 +402,7 @@ export default Ember.Route.extend({
 
 **Setting Map Properties**
 
-[Full component properties documentation](http://matt-jensen.github.io/ember-cli-g-maps/#/basic-usage/map-properties)
+[Full component properties documentation](http://matt-jensen.github.io/cog-google-maps/#/basic-usage/map-properties)
 
 ```js
 // Default settings
@@ -475,7 +475,7 @@ export default Ember.Route.extend({
 
 ## Supported G-Maps Events ##
 
-[Full component events documentation](http://matt-jensen.github.io/ember-cli-g-maps/#/basic-usage/map-events)
+[Full component events documentation](http://matt-jensen.github.io/cog-google-maps/#/basic-usage/map-events)
 
 - click
 - bounds_changed
@@ -500,7 +500,7 @@ export default Ember.Route.extend({
 Selections
 ------------
 
-[Full selections documentation](http://matt-jensen.github.io/ember-cli-g-maps/#/selections/index)
+[Full selections documentation](http://matt-jensen.github.io/cog-google-maps/#/selections/index)
 
 Repurposed from the [Google Maps Drawing Manager](https://developers.google.com/maps/documentation/javascript/drawinglayer), Selections allow you to draw shapes on your map instance.  This allows users to select areas on the map to interact with.  Supported selection types include:
 
@@ -534,7 +534,7 @@ Actions are fired when a selections are completed.  Available selections actions
 Heatmap
 --------
 
-[Full heatmap documentation](http://matt-jensen.github.io/ember-cli-g-maps/#/heatmap/index)
+[Full heatmap documentation](http://matt-jensen.github.io/cog-google-maps/#/heatmap/index)
 
 Heatmap is an abstraction of the [Google Maps Heatmap Layer](https://developers.google.com/maps/documentation/javascript/examples/layer-heatmap).
 

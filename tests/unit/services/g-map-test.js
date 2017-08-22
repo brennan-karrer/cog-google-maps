@@ -1,4 +1,4 @@
-import gMapService from 'ember-cli-g-maps/services/g-map';
+import gMapService from 'cog-google-maps/services/g-map';
 import { module, test } from 'qunit';
 import sinon from 'sinon';
 const { google } = window;

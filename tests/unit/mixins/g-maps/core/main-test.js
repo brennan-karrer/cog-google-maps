@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import coreMainMixin from 'ember-cli-g-maps/mixins/g-maps/core/main';
+import coreMainMixin from 'cog-google-maps/mixins/g-maps/core/main';
 import { module, test } from 'qunit';
 
 const { GMaps } = window;

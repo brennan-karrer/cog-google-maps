@@ -2,7 +2,7 @@ import Ember from 'ember';
 import Application from '../../app';
 import config from '../../config/environment';
 
-import registerAsyncHelpers from './ember-cli-g-maps/register-async-helpers';
+import registerAsyncHelpers from './cog-google-maps/register-async-helpers';
 
 export default function startApp(attrs) {
   let attributes = Ember.merge({}, config.APP);

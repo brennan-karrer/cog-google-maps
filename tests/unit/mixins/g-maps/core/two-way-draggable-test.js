@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import twoWayDraggableMixin from 'ember-cli-g-maps/mixins/g-maps/core/two-way-draggable';
+import twoWayDraggableMixin from 'cog-google-maps/mixins/g-maps/core/two-way-draggable';
 import { module, test } from 'qunit';
 
 module('Unit | Mixin | g maps/core/two way draggable');

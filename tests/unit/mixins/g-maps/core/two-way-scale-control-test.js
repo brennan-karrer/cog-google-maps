@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import twoWayScaleControlMixin from 'ember-cli-g-maps/mixins/g-maps/core/two-way-scale-control';
+import twoWayScaleControlMixin from 'cog-google-maps/mixins/g-maps/core/two-way-scale-control';
 import { module, test } from 'qunit';
 
 module('Unit | Mixin | g maps/core/two way scale control');

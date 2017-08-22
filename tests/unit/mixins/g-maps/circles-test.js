@@ -1,5 +1,5 @@
 import Ember             from 'ember';
-import GMapsCirclesMixin from 'ember-cli-g-maps/mixins/g-maps/circles';
+import GMapsCirclesMixin from 'cog-google-maps/mixins/g-maps/circles';
 import { module, test }  from 'qunit';
 import sinon             from 'sinon';
 

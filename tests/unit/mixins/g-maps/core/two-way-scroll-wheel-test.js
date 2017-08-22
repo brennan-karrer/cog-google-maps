@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import twoWayScrollWheelMixin from 'ember-cli-g-maps/mixins/g-maps/core/two-way-scroll-wheel';
+import twoWayScrollWheelMixin from 'cog-google-maps/mixins/g-maps/core/two-way-scroll-wheel';
 import { module, test } from 'qunit';
 
 module('Unit | Mixin | g maps/core/two way scroll wheel');
