@@ -22,7 +22,7 @@ export default Ember.Mixin.create(Ember.Evented, {
   showZoomControl: false,
   showScaleControl: false,
   isMapLoaded: false,
-  classNames: ['ember-cli-g-map'],
+  classNames: ['cog-google-map'],
   gMap: Ember.inject.service(),
 
   // Map Events
@@ -84,7 +84,7 @@ export default Ember.Mixin.create(Ember.Evented, {
         this._addMapEvents();
 
         if (!this.get('name')) {
-          this.set('name', `ember-cli-g-map-${uuid()}`);
+          this.set('name', `cog-google-map-${uuid()}`);
         }
 
         // Register gMap instance in gMap service
@@ -171,7 +171,7 @@ export default Ember.Mixin.create(Ember.Evented, {
     }
 
     this.set('isMapLoaded', true);
-    this.trigger('ember-cli-g-map-loaded');
+    this.trigger('cog-google-map-loaded');
     this.send('loaded', e);
   },
 

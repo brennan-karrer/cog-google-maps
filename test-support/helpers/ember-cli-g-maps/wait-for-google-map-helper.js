@@ -2,7 +2,7 @@ import Ember from 'ember';
 import loadGoogleMaps from '../../../../cog-google-maps/utils/load-google-maps';
 
 const { $, assert } = Ember;
-const EMBER_CLI_GMAPS_SELECTOR = '.ember-cli-g-map';
+const EMBER_CLI_GMAPS_SELECTOR = '.cog-google-map';
 
 export default function(app, selector = EMBER_CLI_GMAPS_SELECTOR) {
   return new Ember.Test.promise(function(resolve, reject) {

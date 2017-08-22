@@ -7,7 +7,7 @@ export default Ember.Mixin.create(Ember.Evented, {
   /**
    * [on map load bind map `zoom_changed` event to `_bindZoomToModel`]]
    */
-  _addZoomChangedEvent: on('ember-cli-g-map-loaded', function() {
+  _addZoomChangedEvent: on('cog-google-map-loaded', function() {
     const map = this.get('map');
 
     GMaps.on('zoom_changed', map.map, () => {

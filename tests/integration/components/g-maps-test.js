@@ -29,7 +29,7 @@ test('it renders', function(assert) {
   });
   */
 
-  const $gmap = this.$('.ember-cli-g-map');
+  const $gmap = this.$('.cog-google-map');
   assert.equal($gmap.length, 1);
 });
 

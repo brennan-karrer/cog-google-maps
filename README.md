@@ -40,7 +40,7 @@ ENV.contentSecurityPolicy = {
 You wont see your map unless it has height. In `app/styles/app.css`:
 
 ```css
-.ember-cli-g-map {
+.cog-google-map {
     height: 300px;
 }
 ```

@@ -8,7 +8,7 @@ export default Ember.Mixin.create(Ember.Evented, {
   /**
    * [on map load bind map `center_changed` event to `_bindLatLngToModel`]
    */
-  _addCenterChangedEvent: on('ember-cli-g-map-loaded', function() {
+  _addCenterChangedEvent: on('cog-google-map-loaded', function() {
     const googleMapInstance = this.get('map.map');
 
     GMaps.on('center_changed', googleMapInstance, () => {

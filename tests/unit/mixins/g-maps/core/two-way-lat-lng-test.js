@@ -7,7 +7,7 @@ const { GMaps } = window;
 
 module('Unit | Mixin | g maps/core/two way lat lng');
 
-test('_addCenterChangedEvent should add map `center_changed` event on `ember-cli-g-map-loaded` event', function(assert) {
+test('_addCenterChangedEvent should add map `center_changed` event on `cog-google-map-loaded` event', function(assert) {
   assert.expect(1);
 
   const twoWayLatLngObject = Ember.Object.extend(twoWayLatLngMixin);
@@ -20,7 +20,7 @@ test('_addCenterChangedEvent should add map `center_changed` event on `ember-cli
     assert.equal(e, 'center_changed', 'event added was not `center_changed`');
   };
 
-  subject.trigger('ember-cli-g-map-loaded');
+  subject.trigger('cog-google-map-loaded');
 
   GMaps.on = originalGMapsOn;
 });

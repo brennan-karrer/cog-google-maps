@@ -167,7 +167,7 @@
 //   Ember.run.later(() => removeSubject(subject));
 // });
 
-// test('`_initGMap` load should set `isMapLoaded` and trigger `ember-cli-g-map-loaded`', function(assert) {
+// test('`_initGMap` load should set `isMapLoaded` and trigger `cog-google-map-loaded`', function(assert) {
 //   const subject = createSubject();
 //
 //   assert.expect(2);
@@ -175,7 +175,7 @@
 //   subject._initGMap();
 //
 //   assert.equal(true, subject.isMapLoaded);
-//   assert.equal('ember-cli-g-map-loaded', subject.trigger.args[0][0]);
+//   assert.equal('cog-google-map-loaded', subject.trigger.args[0][0]);
 //
 //   Ember.run.later(() => removeSubject(subject));
 // });

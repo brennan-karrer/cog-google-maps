@@ -7,7 +7,7 @@ const { GMaps } = window;
 
 module('Unit | Mixin | g maps/core/two way zoom');
 
-test('_addZoomChangedEvent should add map `zoom_changed` event on `ember-cli-g-map-loaded` event', function(assert) {
+test('_addZoomChangedEvent should add map `zoom_changed` event on `cog-google-map-loaded` event', function(assert) {
   assert.expect(1);
 
   const twoWayZoomObject = Ember.Object.extend(twoWayZoomMixin);
@@ -20,7 +20,7 @@ test('_addZoomChangedEvent should add map `zoom_changed` event on `ember-cli-g-m
     assert.equal(e, 'zoom_changed', 'event added was not `zoom_changed`');
   };
 
-  subject.trigger('ember-cli-g-map-loaded');
+  subject.trigger('cog-google-map-loaded');
 
   GMaps.on = originalGMapsOn;
 });
